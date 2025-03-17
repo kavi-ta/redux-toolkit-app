@@ -3,6 +3,9 @@ import "./App.css";
 import AddTodo from "./components/AddTodo";
 import Todos from "./components/Todos";
 import { UsersDropdown } from "./components/UsersDropdown";
+import { Greetings } from "./components/Greetings";
+import { Counter } from "./components/Counter";
+import { User } from "./components/User";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -10,10 +13,13 @@ function App() {
   return (
     <>
       <h1>My Todo App</h1>
-      <UsersDropdown />
+      <Greetings />
+      <Counter />
+      <User userId={4} />
+      {/* <UsersDropdown />
 
       <AddTodo />
-      <Todos />
+      <Todos /> */}
     </>
   );
 }
